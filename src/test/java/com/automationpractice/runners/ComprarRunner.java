@@ -7,7 +7,7 @@ import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/com/automationpractice/features/Comprar.feature", glue = "com.automationpractice.stepdefinitions", snippets = SnippetType.CAMELCASE)
+@CucumberOptions(features = "src/test/resources/com/automationpractice/features/Comprar.feature", glue = "com.automationpractice.stepdefinitions", snippets = SnippetType.CAMELCASE, format = {"json:target/cucumber.json"})
 public class ComprarRunner {
 
 }
